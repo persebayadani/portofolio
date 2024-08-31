@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f5f5f5; /* Light Gray Background */
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #34495e; /* Dark Slate for text */
+}
+
+header {
+    background-color: #76c7c0; /* Soft Teal */
+    border-radius: 12px;
+    padding: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    color: #ffffff; /* White text */
+    transition: all 0.3s ease;
+}
+
+header:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+header .hello-text {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+header .highlight-text {
+    color: #f1c40f; /* Soft Gold for highlight */
+    font-weight: 700;
+}
+
+header .contact-info {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+section {
+    background-color: #ffffff; /* White for section backgrounds */
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2c3e50; /* Navy Blue for headings */
+    position: relative;
+    text-transform: uppercase;
+}
+
+h1::after {
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: #76c7c0; /* Soft Teal underline */
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-container img.rounded-img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.about-container img.rounded-img:hover {
+    transform: scale(1.1);
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #ecf0f1; /* Light Gray for skill items */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+    background-color: #76c7c0; /* Soft Teal on hover */
+    color: #ffffff; /* White text on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.progress-bar {
+    background-color: #dfe6e9; /* Very light gray for progress bar background */
+    border-radius: 5px;
+    height: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #76c7c0; /* Soft Teal for progress fill */
+    height: 100%;
+    border-radius: 5px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7; /* Mid Gray border */
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #76c7c0; /* Soft Teal focus border */
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #ff6f61; /* Coral for submit button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e74c3c; /* Darker Coral on hover */
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #2c3e50; /* Navy Blue for footer background */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+footer p {
+    color: #ecf0f1; /* Light Gray text */
+    font-size: 14px;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+    color: #76c7c0; /* Soft Teal for social icons */
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #f1c40f; /* Soft Gold on hover */
+}
